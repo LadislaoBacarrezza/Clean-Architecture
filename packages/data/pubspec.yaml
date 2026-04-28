@@ -1,0 +1,10 @@
+name: mi_proyecto_data
+environment:
+  sdk: ^3.9.0
+resolution: workspace
+
+dependencies:
+  dartz: ^0.10.1
+  grpc: ^3.2.0
+  mi_proyecto_domain:
+    path: ../domain

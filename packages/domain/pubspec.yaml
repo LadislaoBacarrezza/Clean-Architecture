@@ -1,0 +1,7 @@
+name: mi_proyecto_domain
+environment:
+  sdk: ^3.9.0
+resolution: workspace
+
+dependencies:
+  dartz: ^0.10.1

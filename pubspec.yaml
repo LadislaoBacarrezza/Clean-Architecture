@@ -1,0 +1,26 @@
+name: mi_ecommerce_raiz
+# Importante: Para usar workspaces necesitas Dart 3.5 o superior
+environment:
+  sdk: ^3.11.0
+
+workspace:
+  - packages/domain
+  - packages/data
+  - packages/features/pdp
+  - packages/features/checkout
+  - apps/clean_architecture
+
+dev_dependencies:
+  melos: ^7.5.1
+
+melos:
+  # Solo los scripts y configuraciones de comandos van aquí
+  scripts:
+    get: melos bootstrap
+    run:app:
+      exec: flutter run
+      packageFilters:
+        scope: "clean_architecture"
+    clean:all:
+      exec: flutter clean
+      description: "Limpia la caché de todos los paquetes"

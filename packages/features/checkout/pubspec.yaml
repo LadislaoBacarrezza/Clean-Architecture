@@ -1,0 +1,17 @@
+name: checkout_feature
+description: "Lógica de negocio y UI para el proceso de compra."
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: ^3.11.0
+
+resolution: workspace
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+
+  mi_proyecto_domain:
+    path: ../../domain
