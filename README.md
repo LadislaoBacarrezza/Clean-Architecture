@@ -57,6 +57,17 @@ packages/
 
 ### Configuración inicial
 Clona el proyecto y ejecuta el bootstrap para vincular todos los paquetes locales y descargar dependencias:
+1. Clonar el repositorio:
+```text
+git clone https://github.com/LadislaoBacarrezza/Clean-Architecture.git
+   cd Clean-Architecture
+```
+2. Ejecutar el Bootstrap: Este comando descarga las dependencias de todos los paquetes y vincula las rutas locales mediante los Workspaces de Dart.
+```text
+melos run get
+```
+
+Nota: Para ejecutar la aplicación principal, sitúate en la carpeta apps/clean_architecture y usa flutter run, o utiliza el comando configurado melos run run:app si ya tienes un dispositivo conectado.
 
 ## 🧪 Características Destacadas
 - **Desacoplamiento Total**: Las features no se conocen entre sí; la comunicación se realiza mediante rutas y el módulo App.
