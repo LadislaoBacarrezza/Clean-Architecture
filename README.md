@@ -19,33 +19,35 @@ El proyecto sigue rigurosamente la separación de capas para asegurar una lógic
 - **Workspaces**: Configuración nativa de Dart SDK 3.11+
 
 ## 📁 Estructura del Proyecto
+```text
 apps/
-└── clean_architecture/          # Aplicación principal (Shell/Runner)
+└── clean_architecture/ # Aplicación principal (Shell/Runner)
 ├── lib/
-│   ├── app_router.dart      # Configuración central de GoRouter
-│   ├── injection_container.dart # Service Locator (GetIt)
-│   └── main.dart            # Punto de entrada
+│ ├── app_router.dart # Configuración central de GoRouter
+│ ├── injection_container.dart # Service Locator (GetIt)
+│ └── main.dart # Punto de entrada
 packages/
-├── domain/                      # Capa de Dominio (Business Logic)
-│   ├── lib/src/
-│   │   ├── entities/            # Entidades de negocio (Product, Order)
-│   │   ├── repositories/        # Interfaces de repositorios
-│   │   ├── usercases/           # Casos de uso (GetProduct, PlaceOrder)
-│   │   └── error/               # Failures de dominio
-├── data/                        # Capa de Datos (Infrastructure)
-│   ├── lib/src/
-│   │   ├── datasources/         # Orígenes de datos y Mocks gRPC
-│   │   ├── models/              # DTOs y Mapeadores
-│   │   └── repositories/        # Implementaciones de repositorios
+├── domain/ # Capa de Dominio (Business Logic)
+│ ├── lib/src/
+│ │ ├── entities/ # Entidades de negocio
+│ │ ├── repositories/ # Interfaces de repositorios
+│ │ ├── usercases/ # Casos de uso
+│ │ └── error/ # Failures de dominio
+├── data/ # Capa de Datos (Infrastructure)
+│ ├── lib/src/
+│ │ ├── datasources/ # Orígenes de datos y Mocks gRPC
+│ │ ├── models/ # DTOs y Mapeadores
+│ │ └── repositories/ # Implementaciones
 └── features/
-├── pdp/                     # Feature: Product Detail Page
-│   ├── lib/src/presentation/
-│   │   ├── bloc/            # Gestión de estado PDP
-│   │   └── pages/           # UI de la página de producto
-└── checkout/                # Feature: Proceso de pago
+├── pdp/ # Feature: Product Detail Page
+│ ├── lib/src/presentation/
+│ │ ├── bloc/ # Gestión de estado PDP
+│ │ └── pages/ # UI de la página de producto
+└── checkout/ # Feature: Proceso de pago
 ├── lib/src/presentation/
-│   ├── bloc/            # Gestión de estado Checkout
-│   └── pages/           # UI del proceso de compra
+│ ├── bloc/ # Gestión de estado Checkout
+│ └── pages/ # UI del proceso de compra
+```
 
 ## 🚀 Instalación y Ejecución
 
